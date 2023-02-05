@@ -16,12 +16,12 @@ def clicked():
         point = (list[i][0], list[i][1])
         list_path.append(point)
 
-    map_widget.set_position(52.26667269308686, 104.63460124177388)  # Paris, France
+    map_widget.set_position(list_path[0][0],list_path[0][1]) 
     map_widget.set_zoom(16)
 
     polygon_1 = map_widget.set_polygon(list_path)
 
-    print(list_path[0])
+    
 
 
 window = Tk()
