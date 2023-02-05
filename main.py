@@ -21,8 +21,6 @@ def clicked():
 
     polygon_1 = map_widget.set_polygon(list_path)
 
-    
-
 
 window = Tk()
 window.title("Test_geo")
@@ -34,7 +32,7 @@ lbl.grid(column=0, row=0)
 txt = Entry(window, width=30)
 txt.grid(column=1, row=0)
 
-map_widget = tkintermapview.TkinterMapView(window, width=1600, height=900, corner_radius=0)
+map_widget = tkintermapview.TkinterMapView(window, width=800, height=600, corner_radius=0)
 map_widget.place(relx=0, rely=0.05)
 
 btn = Button(window, text="Ввод", command=clicked)
